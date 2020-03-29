@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow: hidden;
+}
+
+/* ========================= NAV ========================= */
+
+
+body{
+    overflow: hidden;
+}
+
+#guzik{
+    display:none;
+}
+.guzik1{
+    width:4vh;
+    height:4vh;
+    position: absolute;
+    z-index:5100;
+    top: 1.5vh;
+    left: 1.5vh;
+}
+
+.guzik1 img{
+    width: 4.3vh;
+    height: 4.3vh;
+}
+
+.main-menu{
+    position: absolute;
+    z-index:-10;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100vh;
+    margin-top: -100vh;
+    transition: cubic-bezier(.47,.07,.27,.94) 1s;
+}
+
+#guzik:checked ~ .main-menu{
+    z-index:5000;
+    margin-top: 0px;
+}
+
+#guzik:not(:checked) ~ .main-menu{
+    z-index:-10;
+    margin-top: -100vh;
+}
+
+.main-menu a{
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins';
+    margin-left:  0;
+    transition-delay: 0.7s;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.main-menu ul{
+    margin: 0 auto;
+    list-style-type: none;
+    text-align: center;
+    margin-top: 20vh;
+}
+
+.main-menu li{
+    display: inline-block;
+    margin: 1.4vh;
+}
+
+/* ================================================== */
+
+
+
+/* ========================= ANIMACJA FADE-IN STRONY ========================= */
+
+#fade{
+    position: absolute;
+    z-index: 10;
+    width:100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+	-webkit-animation: animka 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000);
+    animation: animka 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000);
+    opacity: 0;
+}
+
+@-webkit-keyframes animka {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+
+@keyframes animka {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+  
+/* =========================================================================== */
+
+
+/* ========================= ANIMACJA FADE-OUT TŁA ========================= */
+
+#black{
+    position: absolute;
+    z-index:2;
+    width:100%;
+    height:100%;
+    background: black;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;   
+    opacity: 35%;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 35%; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 35%; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 35%; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 35%; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 35%; }
+}
+
+/* =========================================================================== */
+
+#bg1{
+    z-index:1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    object-fit: cover;
+}
+
+#logo{
+    position: absolute;
+    z-index: 4;
+    left: 4.5vw;
+    bottom: 24.5vw;
+}
+
+#logo img{
+    height: 3.5vw;
+}
+
+#header{
+    position: absolute;
+    z-index: 4;
+    left: 4.5vw;
+    bottom: 19vw;
+    color: white;
+    font-size: 4.7vw;
+    font-family: 'Poppins B';
+}
+
+#text{
+    position: absolute;
+    z-index: 4;
+    left: 4.5vw;
+    bottom: 8.5vw;
+    color: white;
+    font-size: 1.8vw;
+    font-family: 'Poppins SS';
+    width: 35vw;
+}
+
+@media only screen and (max-width: 1200px) {
+    #logo img {
+        height: 4.3vw;
+    }
+    #logo{
+        bottom: 29.5vw;
+    }
+    #header{
+        font-size: 5.4vw;
+        bottom: 23.5vw;
+    }
+    #text{
+        font-size: 2.5vw;
+        bottom: 5.5vw;
+        width: 45vw;
+    }
+  }
+
+@media only screen and (max-width: 1000px) {
+    #logo img {
+        height: 5.5vw;
+    }
+    #logo{
+        bottom: 36vw;
+    }
+    #header{
+        font-size: 8vw;
+        bottom: 27vw;
+    }
+    #text{
+        font-size: 2.7vw;
+        bottom: 9vw;
+        width: 45vw;    
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #logo img {
+        height: 5vw;
+    }
+    #logo{
+        bottom: 40vw;
+    }
+    #header{
+        font-size: 6vw;
+        bottom: 33vw;
+    }
+    #text{
+        font-size: 3vw;
+        bottom: 16vw;
+        width: 60vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #logo img {
+        height: 9vw;
+    }
+    #logo{
+        bottom: 59vw;
+    }
+    #header{
+        font-size: 11vw;
+        bottom: 47vw;
+    }
+    #text{
+        font-size: 4.5vw;
+        bottom: 15vw;
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #logo img {
+        height: 8vw;
+    }
+    #logo{
+        bottom: 74vw;
+    }
+    #header{
+        font-size: 12vw;
+        bottom: 60.5vw;
+    }
+    #text{
+        font-size: 5vw;
+        bottom: 23vw;
+        width: 90vw;
+    }
+}

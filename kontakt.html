@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel='stylesheet' href='css/styl-kontakt.css'>
+    <link href="css/fonts.css" rel="stylesheet">
+</head>
+<body>
+    
+    <input id='guzik' type="checkbox">
+    <label for='guzik' class='guzik1'> <img src="img/menu-czarne.png" alt="guzik"> </label>
+    <div class="main-menu">
+            <div class='tekscik'>
+                <ul>
+                    <li><a href="index.html">Strona główna</a></li></br>
+                    <li><a href="dlaczegomy.html">Dlaczego my</a></li></br>
+                    <li><a href="onas.html">O nas</a></li></br>
+                    <li><a href="oferta.html">Oferta</a></li></br>
+                    <li><a href="kontakt.html">Kontakt</a></li></br>
+                </ul>
+            </div>
+    </div>
+    <div id='fade'> </div>
+    <form id='form'>
+        <label class='label' for="imienazwisko">Imię i nazwisko</label></br>
+        <input placeholder='np. Beng Kowalski' type="text" id='imienazwisko'></br>
+        <label class='label' for="email">Adres e-mail</label></br>
+        <input placeholder='np. bengdebest@gmail.com' type="email" id='email'></br>
+        <label class='label' for="temat">Temat wiadomości</label></br>
+        <select name='question' id='temat'></br>
+            <option value="t1">Biznes i współpraca</option>
+            <option value="t2">Obsługa klienta</option>
+            <option value="t3">Skargi, błędy, sugestie</option>
+            <option value="t3">Pochwalenie tej przecudnej strony www zrobionej przez najlepszego informatyka chodzącego po tej Ziemi</option>
+        </select></br>
+        <label class='label' for="tresc">Treść Twojej wiadomości</label></br>
+        <textarea placeholder='Treść Twojej wiadomości...' name="bio" id="tresc" cols="30" rows="8"></textarea></br>
+        <button id='submit' onclick='owo()'>Wyślij</button>
+    </form>
+    <div class="info2"><span style='font-family:"Poppins B";'>Facebook: </span></br>
+    Taima</br>
+    <span style='font-family:"Poppins B";'>Twitter: </span></br>
+    @taima</br>
+    <span style='font-family:"Poppins B";'>nr. tel.: </span></br>
+    327678348</div>
+    <div class="info1"><span style='font-family:"Poppins B";'>Taima sp.z.o.o.</span></br>
+    ul. Łososiowego </br>bloku 6a</br>
+    45-420 Opole</div>
+    <div class="background">
+        <img id='backg' src="img/head5.png" alt="">
+    </div>
+    <script>
+        function owo(){
+            alert("Dziękujemy!");
+        }
+    </script>
+    <div id="white"> </div>
+</body>
+</html>

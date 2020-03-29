@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ========================= NAV ========================= */
+
+
+body{
+    overflow: hidden;
+}
+
+#guzik{
+    display:none;
+}
+.guzik1{
+    width:4vh;
+    height:4vh;
+    position: absolute;
+    z-index:5100;
+    top: 1.5vh;
+    left: 1.5vh;
+}
+
+.guzik1 img{
+    width: 4.3vh;
+    height: 4.3vh;
+}
+
+.main-menu{
+    position: absolute;
+    z-index:-10;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100vh;
+    margin-top: -100vh;
+    transition: cubic-bezier(.47,.07,.27,.94) 1s;
+}
+
+#guzik:checked ~ .main-menu{
+    z-index:5000;
+    margin-top: 0px;
+}
+
+#guzik:not(:checked) ~ .main-menu{
+    z-index:-10;
+    margin-top: -100vh;
+}
+
+.main-menu a{
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins';
+    margin-left: 0;
+    transition-delay: 0.7s;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.main-menu ul{
+    margin: 0 auto;
+    list-style-type: none;
+    text-align: center;
+    margin-top: 20vh;
+}
+
+.main-menu li{
+    display: inline-block;
+    margin: 1.4vh;
+}
+/* ================================================== */
+
+/* ========================= ANIMACJA FADE-IN STRONY ========================= */
+
+#fade{
+    position: absolute;
+    z-index: 10;
+    width:100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+	-webkit-animation: animka 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000);
+    animation: animka 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000);
+    opacity: 0;
+}
+
+@-webkit-keyframes animka {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+
+@keyframes animka {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+  
+/* =========================================================================== */
+
+/* ========================= ANIMACJA FADE-OUT TŁA ========================= */
+
+#black{
+    position: absolute;
+    z-index:5;
+    width:100%;
+    height:100%;
+    background: black;
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 3s; /* Firefox < 16 */
+    -ms-animation: fadein 3s; /* Internet Explorer */
+    -o-animation: fadein 3s; /* Opera < 12.1 */
+    animation: fadein 3s;   
+    opacity: 45%;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 45%; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 45%; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 45%; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 45%; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 45%; }
+}
+
+/* =========================================================================== */
+
+#bg1{
+    z-index:3;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    object-fit: cover;
+}
+
+#logo{
+    position: absolute;
+    z-index: 8;
+    left: 4.5vw;
+    bottom: 24.5vw;
+}
+
+#logo img{
+    height: 3.5vw;
+}
+
+#header{
+    position: absolute;
+    z-index: 8;
+    left: 4.5vw;
+    bottom: 19vw;
+    color: white;
+    font-size: 4.7vw;
+    font-family: 'Poppins B';
+}
+
+#text{
+    position: absolute;
+    z-index: 8;
+    left: 4.5vw;
+    bottom: 6vw;
+    color: white;
+    font-size: 1.8vw;
+    font-family: 'Poppins SS';
+    width: 35vw;
+}
+
+@media only screen and (max-width: 1200px) {
+    #logo img {
+        height: 4.3vw;
+    }
+    #logo{
+        bottom: 38vw;
+    }
+    #header{
+        font-size: 5.4vw;
+        bottom: 31.5vw;
+    }
+    #text{
+        font-size: 2.5vw;
+        bottom: 13.5vw;
+        width: 45vw;
+    }
+  }
+
+@media only screen and (max-width: 1000px) {
+    #logo img {
+        height: 6.5vw;
+    }
+    #logo{
+        bottom: 40vw;
+    }
+    #header{
+        font-size: 7.5vw;
+        bottom: 32vw;
+    }
+    #text{
+        font-size: 2.7vw;
+        bottom: 12vw;
+        width: 48vw;    
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #logo img {
+        height: 6vw;
+    }
+    #logo{
+        bottom: 44vw;
+    }
+    #header{
+        font-size: 7vw;
+        bottom: 36vw;
+    }
+    #text{
+        font-size: 3vw;
+        bottom: 13vw;
+        width: 60vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #logo img {
+        height: 9vw;
+    }
+    #logo{
+        bottom: 61vw;
+    }
+    #header{
+        font-size: 11vw;
+        bottom: 49vw;
+    }
+    #text{
+        font-size: 4.5vw;
+        bottom: 16vw;
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #logo img {
+        height: 8vw;
+    }
+    #logo{
+        bottom: 72vw;
+    }
+    #header{
+        font-size: 10vw;
+        bottom: 61vw;
+    }
+    #text{
+        font-size: 5vw;
+        bottom: 23vw;
+        width: 90vw;
+    }
+}
+
+/* ==========loga========== */
+
+.animal{
+    position: absolute;
+    z-index: 9;
+    width: 25vh;
+    right: 5vh;
+}
+
+#img1{
+     top: 1vh;
+}
+#img2{
+    top: 25vh;
+}
+
+#img3{
+    top: 50vh;
+}
+
+#img4{
+    top: 75vh;
+}
+
+#grid{
+    position: absolute;
+    z-index: 9;
+    left: 3vh;
+    top: 4vh;
+    height: 5vw;
+    width: 5vw;
+    display: grid;
+    grid-template-columns: repeat(2, 20vh);
+    grid-template-rows: repeat(2, 20vh);
+    grid-gap: 3vh;
+    display:none;
+}
+
+.galeria_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*
+#gradient{
+    position: absolute;
+    z-index: 8;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0) 40%,rgb(255, 255, 255) 100%);
+    opacity: 80%;
+}
+*/
+@media only screen and (max-width: 700px) {
+    #gradient{
+        display: none;
+    }
+    .animal{
+        display: none;
+        }
+    
+    #grid{
+        display: grid;
+    }
+
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta</title>
+    <link rel='stylesheet' href='css/styl-oferta.css'>
+    <link href="css/fonts.css" rel="stylesheet">
+        <!-- ten skrypt chowa biały efekt fade-in na stronie po jego wykonaniu - div nie zaslania juz okna -->
+        <script type="text/javascript">
+            window.setTimeout("zamknij();", 800);
+        
+            function zamknij(){
+            document.getElementById("fade").style.display=" none";
+            }
+        </script>
+</head>
+<body>
+    
+        <script>
+            function owo(){
+                alert("Dostępne wkrótce!");
+            }
+        </script>
+        <div id='fade'> </div>
+        <input id='guzik' type="checkbox">
+        <label for='guzik' class='guzik1'><img src="img/menu-czarne.png" alt="guzik"></label>
+        <div class="main-menu">
+                <div class='tekscik'>
+                    <ul>
+                        <li><a href="index.html">Strona główna</a></li></br>
+                        <li><a href="dlaczegomy.html">Dlaczego my</a></li></br>
+                        <li><a href="onas.html">O nas</a></li></br>
+                        <li><a href="oferta.html">Oferta</a></li></br>
+                        <li><a href="kontakt.html">Kontakt</a></li></br>
+                    </ul>
+                </div>
+        </div>
+        <div class='slidershow srodek'>
+        <div class="okna">
+            
+                <input type="radio" name='r' id='r1' checked>
+                <input type="radio" name='r' id='r2'>
+
+                <div class="slide s1">
+                    <div id='bialy'> </div>
+                    <div id='wrapper'>
+                        <div class='focia div1'>
+                            <p>Mydła i maseczki</p>
+                            <img class='focia1 img' src="img/oferta1.png" alt="">
+                        </div>
+                        <div class='focia div2'>
+                            <p>Wałki jadeitowe</p>
+                            <img class='focia2 img' src="img/oferta2.png" alt="">
+                        </div>
+                        <div class='focia soon div3'>
+                            <p>Płatki pod oczy</p>
+                            <span>Już wkrótce!</span>
+                            <img class='focia3 img' src="img/oferta3.png" alt="">
+                        </div>
+                        <div class='focia soon div4'>
+                            <p>Makijaż</p>
+                            <span>Już wkrótce!</span>
+                            <img class='focia4 img' src="img/oferta4.png" alt="">
+                        </div>
+                        <div class='focia div5'>
+                            <p>Kremy</p>
+                            <img class='focia5 img' src="img/oferta5.png" alt="">
+                        </div>
+                    </div>
+
+                    <div id="wrapper2">
+                        <div class="fotka">
+                            <img src="img/offer1.png" alt="" class="zdjecie fotka1">
+                        </div>
+                        <div class="fotka">
+                            <img src="img/offer2.png" alt="" class="zdjecie fotka2">
+                        </div>
+                        <div class="fotka">
+                            <img src="img/offer3.png" alt="" class="zdjecie fotka3">
+                        </div>
+                        <div class="fotka">
+                            <img src="img/offer4.png" alt="" class="zdjecie fotka4">
+                        </div>
+                        <div class="fotka">
+                            <img src="img/offer5.png" alt="" class="zdjecie fotka5">
+                        </div>
+                    </div>
+
+                    <img class='picture' id='bg11' src="img/head4.png" alt="">
+                    <div class="text1"><span style='font-family:"Poppins B";'>Nowe</span> </br>produkty</div>
+                </div>
+
+                <div class="slide">
+                    <div class="containeroferta">
+                        <div class="blank">
+                            <img id='jade' src="img/jade.png">
+                            <img id='jade1' src='img/jade1.png'>
+                            <table class="tak">
+                                <tr>
+                                    <td>nazwa</td><td>opis</td><td>typ skóry</td><td>kolor</td>
+                                </tr>
+                                <tr>
+                                    <td>roller jadeitowy</td><td>ujędrnia, napina skórę; zapobiega zmarszczkom i wypryskom. Skóra staje się pełna blasku.</td><td>każdy rodzaj skóry</td><td>zielony</td>
+                                </tr>
+                                </table>
+                                <div class='placebo'><span style='font-family:"Poppins B";'>Roller jadeitowy</span>  - ujędrnia, napina skórę; zapobiega zmarszczkom i wypryskom. Skóra staje się pełna blasku. Dla każdego rodzaju skóry.</div>
+                            <div class="cena">19,99zł</div>
+                            <button class='kup' onclick="owo()">Kup</button>
+                        </div>
+                        <div class="blank">
+                            <img id='mask' src="img/mask.png" alt="">
+                            <img id='mask1' src="img/mask1.png" alt="">
+                            <table class="tak">
+                                <tr>
+                                    <td>nazwa</td><td>opis</td><td>typ skóry</td><td>pojemność</td>
+                                </tr>
+                                <tr>
+                                    <td>maska do twarzy</td><td>wygładza, odświeża, oczyszcza i nawilża. Skóra staje się miękka, gładka i oczyszczona.</td><td>każdy rodzaj skóry</td><td>100ml</td>
+                                </tr>
+                                </table>
+                                <div class='placebo'><span style='font-family:"Poppins B";'>Maska do twarzy</span> - wygładza, odświeża, oczyszcza, nawilża; Skóra staje się miękka, gładka i oczyszczona. Dla każdego rodzaju skóry.</div>
+                            <div class="cena">16,99zł</div>
+                            <button class='kup' onclick="owo()">Kup</button>
+                        </div>
+                        <div class="blank">
+                            <img id='soap' src="img/soap.png" alt="">
+                            <img id='soap1' src="img/soap1.png" alt="">
+                            <table class="tak">
+                                <tr>
+                                    <td>nazwa</td><td>opis</td><td>typ skóry</td><td>waga</td>
+                                </tr>
+                                <tr>
+                                    <td>naturalne mydło</td><td>do mycia włosów, ciała oraz twarzy. Oczyszcza, nawilża i pozostawia po sobie piękny zapach.</td><td>każdy rodzaj skóry</td><td>250g</td>
+                                </tr>
+                                </table>
+                                <div class='placebo'><span style='font-family:"Poppins B";'>Naturalne mydło</span>  - do mycia włosów, ciała oraz twarzy. Oczyszcza, nawilża i pozostawia po sobie piękny zapach. Dla każdego rodzaju skóry.</div>
+                            <div class="cena">9,99zł</div>
+                            <button class='kup' onclick="owo()">Kup</button>
+                        </div>
+                    </div>
+                    <img class='picture' id='bg22' src="img/head4.png" alt="">
+                </div>
+
+        </div>
+        <div class="navigation">
+            <label for="r1" class='bar'>Oferta</label>
+            <label for="r2" class='bar'>Kup!</label>
+        </div>
+        </div>
+</body>
+</html>
